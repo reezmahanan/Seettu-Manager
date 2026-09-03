@@ -1,0 +1,198 @@
+# ==============================================
+# SEETTUMANAGER - .gitignore
+# ==============================================
+
+# ==============================================
+# 1. BACKEND (Spring Boot / Java)
+# ==============================================
+
+# Compiled files
+/target/
+*.class
+
+# Maven build files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.mvn/
+
+# Spring Boot local config
+application-local.properties
+application-dev.properties
+application-test.properties
+
+# Logs
+/logs/
+*.log
+*.log.gz
+
+# JAR files
+*.jar
+*.war
+*.ear
+
+# ==============================================
+# 2. FRONTEND (React.js / Vite / Node.js)
+# ==============================================
+
+# Node modules
+/frontend/node_modules/
+node_modules/
+
+# Build output
+/frontend/dist/
+/frontend/build/
+/frontend/.vite/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ==============================================
+# 3. DATABASE
+# ==============================================
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# Database dumps
+*.sql.gz
+dump-*.sql
+backup-*.sql
+
+# ==============================================
+# 4. IDE / EDITOR FILES
+# ==============================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+/out/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+/bin/
+
+# NetBeans
+nbproject/
+nb-build.xml
+
+# ==============================================
+# 5. OPERATING SYSTEM FILES
+# ==============================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.directory
+
+# ==============================================
+# 6. DEPLOYMENT / DOCKER
+# ==============================================
+
+docker-compose.override.yml
+.dockerignore
+*.secret.yaml
+*.secrets.yaml
+
+# ==============================================
+# 7. SECURITY / SECRETS
+# ==============================================
+
+*.pem
+*.key
+*.crt
+*.csr
+*.keystore
+*.jks
+.ssh/
+
+# ==============================================
+# 8. TEMPORARY & TEST FILES
+# ==============================================
+
+/tmp/
+/temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# Test coverage
+/coverage/
+.nyc_output/
+.jest/
+
+# ==============================================
+# 9. GENERATED & COMPRESSED FILES
+# ==============================================
+
+# Reports
+/reports/
+*.pdf
+*.docx
+*.xlsx
+
+# Generated code
+/generated/
+/gen/
+
+# Compressed
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ==============================================
+# 10. PROJECT-SPECIFIC
+# ==============================================
+
+# Local backups
+/backup/
+*.backup
+
+# Custom config
+local.properties
+custom.properties
+
+# Database schema files (keep in database/ folder)
+database/*.sql
+!database/schema.sql
+!database/seed_data.sql
